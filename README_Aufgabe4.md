@@ -1,0 +1,2 @@
+Die dorny/test-reporter listet die durchgelaufen Tests schön übersichtlich in den Github Actions auf.
+Mit Hilfe dieser Action wird ein neuer Tab hinzugefügt, wo alles übersichtlicher dargestellt ist als direkt im step.
