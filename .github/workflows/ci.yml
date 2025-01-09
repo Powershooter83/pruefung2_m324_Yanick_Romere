@@ -36,3 +36,11 @@ jobs:
           OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
           OPENAI_API_MODEL: 'gpt-3.5-turbo'
           exclude: '**/*.json, **/*.md'
+
+      - name: Test Reporter
+        uses: dorny/test-reporter@v1.9.1
+        if: success() || failure()
+        with:
+          name: Mocha Tests
+          path: test-reports/results.json
+          reporter: mocha-json
