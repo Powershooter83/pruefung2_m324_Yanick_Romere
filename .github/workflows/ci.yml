@@ -30,7 +30,7 @@ jobs:
         run: npm test
 
       - name: AI Code Reviewer
-        uses: aidar-freeed/ai-codereviewer@v2.7.0
+        uses: aidar-freeed/ai-codereviewer@v2.6.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
